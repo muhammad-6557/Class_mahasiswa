@@ -1,0 +1,36 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace latihanclassdanobject
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // membuat objek dari class Mahasiswa
+            Mahasiswa saya = new Mahasiswa();
+            Mahasiswa kamu = new Mahasiswa();
+
+            // mengeset nilai properties objek saya dan kamu
+            saya.Nim = "25.11.6557";
+            saya.Nama = "Muhammad";
+            saya.Ipk = 3.3f;
+
+            kamu.Nim = "25.11.6433";
+            kamu.Nama = "fazya";
+            kamu.Ipk = 3.5f;
+
+            // memanggil method registrasi dan isi krs
+            saya.Registrasi();
+            saya.IsiKrs();
+
+            kamu.Registrasi();
+            kamu.IsiKrs();
+
+            Console.ReadKey();
+        }
+    }
+}
